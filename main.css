@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(27, 26, 26);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+.whole{
+    display: grid;
+    grid-template-rows: 50px 2fr 4fr;
+    width: 260px;
+    height: 500px;
+    padding: 10px;
+    padding-bottom: 30px;
+    border: 5px solid white;
+    border-radius: 20px;
+   
+}
+.top-bar{
+    display: grid;
+    grid-template-columns: 117px 40px 40px 40px ;
+    column-gap: 8px;
+    align-items: center;
+}
+.top-bar button{
+    cursor: pointer;
+    flex: 1fr;
+    background-color: rgb(27, 26, 26) ;
+    border-radius: 100px;
+    border: none;
+    color: rgb(230, 227, 227);
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    align-items: center;
+}
+.top-bar button:hover{
+    background-color: rgb(125, 125, 125);
+    border-radius: 100px;
+    transition: background-color 0.5s ease;
+    align-items: center;
+}
+.resultBar{ 
+    display: flex;
+    font-size: 25px;
+    padding:10px;
+    position: relative;
+}
+.result{
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+}
+.calci{
+    display: flex;
+    flex-direction: row;
+
+}
+.CalciButton{
+    flex: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+} 
+
+.CalciButton button{
+    cursor: pointer;
+    color: rgb(230, 227, 227);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 5px;
+}   
+.num-button{
+    background-color: rgb(35, 35, 35);
+    font-size: larger;
+    font-weight: bold;
+}
+.opButton{
+    background-color: rgb(55, 55, 55); 
+    font-size: 20px; 
+    
+}
+.equals{
+    background-color: rgb(237, 87, 36);
+}
+.CalciButton .equals:hover{
+    background-color: rgb(225, 64, 10);
+}
+
+.CalciButton button:hover{
+    transition: background-color 0.3s ease;
+    background-color: rgb(87, 86, 86);
+}  
+
+.is-clicked{
+    background-color: rgb(35, 35, 35);
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(230, 227, 227);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    margin-left: 5px;
+}
